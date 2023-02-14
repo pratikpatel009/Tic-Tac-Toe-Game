@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        td {
+            border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 72px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        td:hover {
+            background-color: #f0f0f0;
+        }
+        
+        td:active {
+            background-color: #e0e0e0;
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #3e8e41;
+        }
+        
+        button:active {
+            background-color: #367d39;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <table id="board">
+        <tr>
+            <td id="cell00"></td>
+            <td id="cell01"></td>
+            <td id="cell02"></td>
+        </tr>
+        <tr>
+            <td id="cell10"></td>
+            <td id="cell11"></td>
+            <td id="cell12"></td>
+        </tr>
+        <tr>
+            <td id="cell20"></td>
+            <td id="cell21"></td>
+            <td id="cell22"></td>
+        </tr>
+    </table>
+    <button onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
